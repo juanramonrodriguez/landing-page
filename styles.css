@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2? family= Poppins:ital,wght@1,900 & display=swap");
+
+/*Resetiar*/
 * {
   margin: 0;
   padding: 0;
@@ -5,109 +8,221 @@
   text-decoration: none;
   list-style: none;
 }
+body {
+  background-image: url(./imagenes/3626052.jpg);
+}
 
 header {
+  /*background: #000000; /* fallback for old browsers */
+  /*background: -webkit-linear-gradient(
+    to bottom,
+    #434343,
+    #000000
+  ); /*Chrome 10-25, Safari 5.1-6*/
+  /*background: linear-gradient(
+    to bottom,
+    #434343,
+    #000000
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 50px;
-  background: #000000; /* fallback for old browsers */
+  padding: 0 50px 0 0;
+  height: 50px;
+}
+.imagen-logo {
+  display: flex;
+  height: 50px;
+  padding: 3px;
+}
+.menu-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+.menu-links a {
+  color: white;
+  font-size: 20px;
+}
+
+/*_______________SECCION HERO_________________*/
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#hero {
+  max-width: 1200px;
+  margin-top: 65px;
+  padding: 5px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+.hero-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+.hero-info h1 {
+  font-family: "Poppins", sans-serif;
+  color: whitesmoke;
+  font-size: 100px;
+  font-weight: bold;
+}
+.hero-info p {
+  color: white;
+  font-family: "Playfair Display", serif;
+  font-family: "PT Serif", serif;
+  font-size: 23px;
+  width: 100%;
+}
+
+.hero-botton {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  margin: 80px;
+}
+
+.btn1 a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0f2027; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
-    #000000,
-    #e74c3c
+    #2c5364,
+    #203a43,
+    #0f2027
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right,
-    #000000,
-    #e74c3c
+    #2c5364,
+    #203a43,
+    #0f2027
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-.navbar,
-.menu-links {
-  display: flex;
-  gap: 5rem;
-}
 
-a {
-  font-size: 20px;
-  color: rgb(240, 243, 247);
-  text-decoration: none;
-}
-.imagen {
-  display: flex;
-  height: 60px;
-  width: auto;
-}
-
-.container {
-  display: flex;
-
-  height: fit-content;
-  margin: 50px 100px;
-  justify-content: center;
-  gap: 5rem;
-}
-
-.img {
-  border-radius: 30px;
-  width: 600px;
-  height: 600px;
-  background-image: url(./imagenes/OIG.k.43CKEG9uh81y.O.jpeg);
-  background-position: center;
-  background-size: cover;
+  color: white;
+  border: solid black 1px;
+  width: 170px;
+  height: 50px;
+  border-radius: 15px;
+  font-size: 25px;
   filter: drop-shadow(10px 10px 20px rgb(81, 92, 173));
 }
-.hero {
-  width: 600px;
-  height: 300px;
-}
-
-h1 {
-  display: flex;
-  justify-content: center;
-  font-size: 100px;
-  font-family: "League Gothic", sans-serif;
-  font-family: "League Spartan", sans-serif;
-  font-family: "Montserrat", sans-serif;
-  font-family: "Roboto", sans-serif;
-  font-weight: 800px;
-}
-p {
-  display: flex;
-  justify-content: start;
-  font-size: 23px;
-  font-family: "League Spartan", sans-serif;
-  font-family: "Montserrat", sans-serif;
-}
-.button {
-  width: 600px;
-  height: 250px;
+.btn2 a {
   display: flex;
   align-items: center;
-  gap: 3rem;
-}
-.btn {
-  display: flex;
-  border-radius: 20px;
-  border: black solid 3px;
-  width: 250px;
-  height: 65px;
-  align-items: center;
   justify-content: center;
-  font-size: 40px;
-  font-family: "Cairo", sans-serif;
-}
-.btn1 {
-  background-image: linear-gradient(to left, #000000, #e74c3c);
-}
-.btn2 {
-  display: flex;
-  background-color: white;
+  background: #f5f4f4;
   color: #000000;
+  border: solid 1px;
+  width: 180px;
+  height: 50px;
+  border-radius: 15px;
+  font-size: 25px;
+  filter: drop-shadow(10px 10px 20px rgb(81, 92, 173));
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
 }
-.info {
-  display: flex;
 
+.hero-imagen img {
+  display: flex;
+  width: 500px;
+  height: 500px;
+  border-radius: 20px;
+  border: solid 2px;
+}
+/*.hero-imagen img {
+  filter: drop-shadow(10px 10px 20px rgb(81, 92, 173));
+  -webkit-filter: drop-shadow(10px 10px 20px rgb(81, 92, 173));
+}*/
+#info {
+  max-width: 1200px;
+  margin-top: 100px;
+  padding: 5px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+.info-description {
+  display: flex;
+  justify-content: center;
+}
+.info-description p {
+  color: white;
+  font-family: "Playfair Display", serif;
+  font-family: "PT Serif", serif;
+  font-size: 22px;
+  width: 90%;
+  word-spacing: 8px;
+}
+
+/*_________________INFO SECTION CARD____________*/
+#info-container {
+  padding: 70px 0;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.info-card-container {
+  display: flex;
+  gap: 5rem;
+}
+
+.info-card {
+  background-color: #f9fafc;
+  width: 300px;
+  height: 290px;
+  padding: 20px 10px;
+
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+/*Imagen de Shell Box*/
+.info-card img {
+  filter: drop-shadow(5px 5px 5px white);
+  width: 200px;
+  height: 100px;
+  -webkit-filter: drop-shadow(5px 5px 5px white);
+}
+.info-card p {
+  font-family: "Playfair Display", serif;
+  font-family: "PT Serif", serif;
+  font-size: 16px;
   text-align: center;
+}
+.info-card h3 {
+  color: rgb(238, 16, 16);
+  font-size: 30px;
+  word-spacing: 10px;
+}
+
+#aceite {
+  display: flex;
+  width: 445px;
+  height: 240px;
+}
+#combustible {
+  display: flex;
+  width: 150px;
+  height: 108px;
 }

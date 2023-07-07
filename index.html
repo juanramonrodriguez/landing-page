@@ -5,40 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Page</title>
     <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="stylesheet"
-      href="link rel="
-      preconnect
-      href="https://fonts.googleapis.com"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=Montserrat:wght@300;400;600;700;800&family=Nunito+Sans:ital,wght@1,600&family=Poppins:wght@300;400;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@200&family=Montserrat:ital,wght@1,200&family=Roboto:ital,wght@1,100&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=League+Gothic&family=League+Spartan:wght@200&family=Montserrat:ital,wght@1,200&family=Roboto:ital,wght@1,100&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
     <header>
-      <div class="imagen">
+      <div class="imagen-logo">
         <img
           src="./imagenes/Pizzorno___Lopez__3_-removebg-preview.png"
           alt="logo"
@@ -53,32 +23,33 @@
       </nav>
     </header>
     <main>
-      <div class="container">
-        <div class="hero">
+      <!---===================== HERO ==============================================-->
+      <section id="hero">
+        <div class="hero-info">
           <h1>Visión y Compromiso</h1>
-          <br />
-          <br />
-          <br />
           <p>
-            Te acompañamos brindándote el mejor cuidado para tu motor con nafta
+            Te acompañamos brindándote el mejor cuidado para tu motor con naftas
             y lubricantes que protegen y aseguran el máximo rendimiento de tu
-            vehículo. 🚗
+            vehiculo.
           </p>
-          <br />
-
-          <div class="button">
-            <a class="btn btn1" href="#">Contacto</a>
-            <a class="btn btn2" href="">Combustibles</a>
+          <div class="hero-botton">
+            <div class="btn1">
+              <a href="#">Contacto</a>
+            </div>
+            <div class="btn2">
+              <a href="#">Envianos tu C.V</a>
+            </div>
           </div>
         </div>
-
-        <div class="img"></div>
-      </div>
-      <br />
-      <br />
-
-      <div class="container info">
-        <div class="seccion-info">
+        <div class="hero-imagen">
+          <img
+            src="./imagenes/OIG.k.43CKEG9uh81y.O.jpeg"
+            alt="Imagen principal"
+          />
+        </div>
+      </section>
+      <section id="info">
+        <div class="info-description">
           <p>
             Queremos satisfacer las necesidades energéticas de la sociedad de
             una manera viable desde las perspectivas económica, social y
@@ -89,7 +60,80 @@
             fundamental fortalecer nuestra presencia digital.
           </p>
         </div>
-      </div>
+      </section>
+      <!----=====================SECTION CARDS=======================================-->
+      <section id="info-container">
+        <div class="info-card-container">
+          <!------------------------CARD 1----------------------------------------------->
+          <div class="info-card">
+            <img src="./imagenes/unnamed.png" alt="shell box" />
+            <h3>SHELL BOX</h3>
+            <p>
+              Acumulá y canjeá puntos, obtené descuentos exclusivos y mucho más!
+            </p>
+          </div>
+          <!-----------------------CARD 2------------------------------------------------------>
+
+          <div class="info-card">
+            <img
+              id="aceite"
+              src="./imagenes/lubricantes_1.png"
+              alt="Shell Aceites"
+            />
+            <h3>SHELL ACEITES</h3>
+            <p>
+              Encontra toda la linea de Lubricantes Shell para todo tipos de
+              motores, Motos, Autos, Camiones y Camionetas.
+            </p>
+          </div>
+          <!-------------------------CARD 3------------------------------------------------->
+
+          <div class="info-card">
+            <img
+              id="combustible"
+              src="./imagenes/Combustibles.png"
+              alt="Combustibles"
+            />
+            <h3>COMBUSTIBLES</h3>
+            <p>
+              Nuestros clientes saben de motores, por eso eligen combustibles
+              Shell.
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <!---
+      <section id="hero">
+        
+        <div class="hero-info">
+          <h1>Visión y Compromiso</h1>
+          <p>
+            Te acompañamos brindándote el mejor cuidado para tu motor con nafta
+            y lubricantes que protegen y aseguran el máximo rendimiento de tu
+          </p>
+          <div class="hero-img">
+            <img src="./imagenes/OIG.k.43CKEG9uh81y.O.jpeg" alt="" />
+          </div>
+
+          <a id="btn1" href="#">Contacto</a>
+          <a id="btn2" href="">Combustibles</a>
+
+          
+          <div class="hero-mas-info"></div>
+          <p>
+            Queremos satisfacer las necesidades energéticas de la sociedad de
+            una manera viable desde las perspectivas económica, social y
+            medioambiental, tanto en el presente como en el futuro. Descubrí
+            nuestra empresa y nuestros empleados. Decidimos dar el primer paso
+            para estar más conectados con nuestros clientes. Además de contar
+            con 3 estaciones, 2 en Villa María y una en San Luis, consideramos
+            fundamental fortalecer nuestra presencia digital.
+          </p>
+          </div>
+        </div>
+      </section>
+    </main>-->
   </body>
 </html>
