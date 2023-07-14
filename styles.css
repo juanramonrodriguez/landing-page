@@ -8,6 +8,10 @@
   text-decoration: none;
   list-style: none;
 }
+main {
+  max-width: 100%;
+  justify-content: center;
+}
 body {
   background-image: url(./imagenes/fondo-web.jpg);
   background-position: 50%;
@@ -61,11 +65,10 @@ main {
 #hero {
   max-width: 1200px;
   margin-top: 65px;
-  padding: 5px 0;
+  /*padding: 5px 0;*/
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 60px;
 }
 .hero-info {
   display: flex;
